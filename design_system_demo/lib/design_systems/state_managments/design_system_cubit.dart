@@ -1,4 +1,5 @@
 import 'package:bloc/bloc.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import '../data/theme_data.dart';
 import 'package:flutter/material.dart';
 part 'design_system_state.dart';
@@ -13,4 +14,8 @@ class DesignSystemCubit extends Cubit<DesignSystemState> {
     final state = isDark ? DesignSystemState.dark() : DesignSystemState.light();
     if (!isClosed) emit(state);
   }
+}
+
+extension DesignSystemCubitExt on BuildContext {
+  DesignSystemCubit get designSystemCubit => read<DesignSystemCubit>();
 }

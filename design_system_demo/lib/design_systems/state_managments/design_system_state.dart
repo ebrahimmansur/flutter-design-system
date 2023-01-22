@@ -21,6 +21,9 @@ class DesignSystemState {
     final themeData = ThemeData.light().copyWith(
       scaffoldBackgroundColor: appTheme.colorData.screenBackground,
       visualDensity: VisualDensity.adaptivePlatformDensity,
+      appBarTheme: const AppBarTheme().copyWith(
+        backgroundColor: appTheme.colorData.appbarBackground,
+      ),
       timePickerTheme: TimePickerThemeData(
         //  backgroundColor: ColorProvider.primaryColor,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
@@ -45,6 +48,9 @@ class DesignSystemState {
     final themeData = ThemeData.light().copyWith(
       scaffoldBackgroundColor: appTheme.colorData.screenBackground,
       visualDensity: VisualDensity.adaptivePlatformDensity,
+      appBarTheme: const AppBarTheme().copyWith(
+        backgroundColor: appTheme.colorData.appbarBackground,
+      ),
       timePickerTheme: TimePickerThemeData(
         //  backgroundColor: ColorProvider.primaryColor,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),

@@ -9,12 +9,16 @@ class ColorData extends Equatable {
   final Color primary;
   final Color accent;
   final Color screenBackground;
+  final Color appbarBackground;
   final Color primaryButton;
   final Color secondryButton;
+  final Color title;
   const ColorData._({
     required this.primary,
     required this.accent,
+    required this.title,
     required this.screenBackground,
+    required this.appbarBackground,
     required this.primaryButton,
     required this.secondryButton,
   });
@@ -23,7 +27,9 @@ class ColorData extends Equatable {
   factory ColorData.light() => const ColorData._(
       primary: Colors.orange,
       accent: Colors.green,
+      title: Colors.black87,
       screenBackground: Colors.white,
+      appbarBackground: Colors.pink,
       primaryButton: Colors.green,
       secondryButton: Colors.white);
 
@@ -31,6 +37,8 @@ class ColorData extends Equatable {
   factory ColorData.dark() => const ColorData._(
       primary: Colors.orange,
       accent: Colors.green,
+      title: Colors.white,
+      appbarBackground: Colors.black12,
       screenBackground: Colors.black87,
       primaryButton: Colors.green,
       secondryButton: Colors.white);
