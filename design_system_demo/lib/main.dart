@@ -16,11 +16,11 @@ class MyApp extends StatelessWidget {
     return DesignSystemProvider(
       create: (context, state) {
         return MaterialApp(
-          title: 'Flutter Demo',
+          title: 'Design System Demo',
           theme: state.themeData,
           darkTheme: state.darkThemeData,
           themeMode: state.themeMode,
-          home: const MyHomePage(title: 'Flutter Demo Home Page'),
+          home: const MyHomePage(title: 'Design System'),
         );
       },
     );
