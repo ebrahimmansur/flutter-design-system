@@ -6,55 +6,64 @@ import 'package:flutter/material.dart';
 ///
 ///auther - Ebrahim Mansur.
 class TypographyData extends Equatable {
-  final TextStyle title;
-  final TextStyle pargrap;
-  final TextStyle messages;
-  final TextStyle label;
+  final TextStyle title1;
+  final TextStyle title2;
+  final TextStyle pargrap1;
+  final TextStyle pargrap2;
+  final TextStyle messages1;
+  final TextStyle messages2;
+  final TextStyle label1;
+  final TextStyle label2;
   const TypographyData._({
-    required this.title,
-    required this.pargrap,
-    required this.messages,
-    required this.label,
+    required this.title1,
+    required this.title2,
+    required this.pargrap1,
+    required this.pargrap2,
+    required this.messages1,
+    required this.messages2,
+    required this.label1,
+    required this.label2,
   });
 
-//your typography for mobile devices
-  factory TypographyData.small() => const TypographyData._(
-        title: TextStyle(
-          fontSize: 16,
-          fontWeight: FontWeight.w800,
-        ),
-        pargrap: TextStyle(
-          fontSize: 14,
-        ),
-        messages: TextStyle(
-          fontSize: 16,
-        ),
-        label: TextStyle(
-          fontSize: 14,
-        ),
-      );
-
-//your typography for tablet devices
-  factory TypographyData.big() => const TypographyData._(
-        title: TextStyle(
+//your typography for devices
+  factory TypographyData.create() => const TypographyData._(
+        title1: TextStyle(
           fontSize: 18,
           fontWeight: FontWeight.w800,
         ),
-        pargrap: TextStyle(
+        title2: TextStyle(
+          fontSize: 16,
+          fontWeight: FontWeight.w800,
+        ),
+        pargrap1: TextStyle(
           fontSize: 16,
         ),
-        messages: TextStyle(
+        pargrap2: TextStyle(
+          fontSize: 14,
+        ),
+        messages1: TextStyle(
+          fontSize: 17,
+        ),
+        messages2: TextStyle(
           fontSize: 16,
         ),
-        label: TextStyle(
-          fontSize: 15,
+        label1: TextStyle(
+          fontSize: 16,
+        ),
+        label2: TextStyle(
+          fontSize: 14,
         ),
       );
+
   @override
   List<Object?> get props => [
-        title,
-        pargrap,
-        messages,
-        label,
+        title1,
+        title2,
+        pargrap1,
+        pargrap2,
+        messages1,
+        messages2,
+        label1,
+        label2,
       ];
 }
