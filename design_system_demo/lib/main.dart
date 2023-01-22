@@ -1,7 +1,4 @@
-import 'package:design_system_demo/design_systems/state_managments/design_system_cubit.dart';
-import 'package:design_system_demo/design_systems/widgets/design_system_inherited_widget.dart';
-import 'package:design_system_demo/design_systems/widgets/design_system_widget.dart';
-import 'package:flutter/material.dart';
+import 'design_systems/design_system_barrel.dart';
 
 void main() {
   runApp(const MyApp());
