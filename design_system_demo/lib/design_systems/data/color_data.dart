@@ -3,6 +3,8 @@ import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
 
 ///The model encapsulate the colors used by the design system.
+///
+///auther - Ebrahim Mansur.
 class ColorData extends Equatable {
   final Color primary;
   final Color accent;
